@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grange Truck Park</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/postmail.js"></script>
+</head>
+<body>
+    <!-- Scroll to top button -->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <!-- Heading -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Company Title -->
+            <div class="col-sm-4 bg-gtwhite">
+                <!-- <h1 class="heading-gtpleft">Grange Truck Park</h2>
+                <h5 class="heading-gtpleft"><kbd>Secure Vehicle Parking</kbd></h5>
+                <h6 class="heading-gtpleft"><kbd>version 0.0.2</kbd></h6> -->
+            </div>
+            <div class="col-sm-4 bg-gtpwhite">
+                <div class="heading-gtptitle">
+                    <img src="img/icon/gtp-logo-small.jpeg" />
+                </div>
+            </div>
+            <!-- contact details/social media links -->
+            <div class="col-sm-4 bg-gtpwhite">
+                <h5 class="heading-gtpleft">
+                    <!-- <img src="img/icon/email-icon.png" />info@grangetruckpark.co.uk
+                    <p />   
+                    <img src="img/icon/phone-icon.png" />0114 212 3456 -->
+                </h5>
+            </div>
+        </div>
+    </div>
+    <!-- NavBar -->
+    <div class="container-fluid"></div>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-auto" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto mx-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/icon/truck-icon.png" alt="Grange Truck Park" style="width:40px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ourservices">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#findus">Find Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle = "modal" data-target= "#contactus">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Photo Carousel -->
+    <div id="gtpcarousel" class="carousel slide " data-ride="carousel" data-interval="3000">
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+            <li data-target="#gtpcarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#gtpcarousel" data-slide-to="1"></li>
+            <li data-target="#gtpcarousel" data-slide-to="2"></li>
+            <li data-target="#gtpcarousel" data-slide-to="3"></li>
+            <li data-target="#gtpcarousel" data-slide-to="4"></li>
+            <li data-target="#gtpcarousel" data-slide-to="5"></li>
+        </ol> -->
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid" src="img/gtpcarousel/m1-southbound.jpg" alt="Southbound approach from M1">
+                <div class="carousel-caption">
+                    <h3>M1 Southbound Approach</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/gtpcarousel/m1-northbound.jpg" alt="Northbound approach from M1">
+                <div class="carousel-caption">
+                    <h3>M1 Northbound Approach</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/gtpcarousel/entrance.jpg" alt="Site Entrance">
+                <div class="carousel-caption">
+                    <h3>Site Entrance</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/gtpcarousel/gate.jpg" alt="Security Gate">
+                <div class="carousel-caption">
+                    <h3>Security Gate</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/gtpcarousel/barrier-out.jpg" alt="ANPR Controlled Barrier">
+                <div class="carousel-caption">
+                    <h3>ANPR Controlled Barrier</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/gtpcarousel/parking.jpg" alt="Parking Area">
+                <div class="carousel-caption">
+                    <h3>Parking Area</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/gtpcarousel/tapa-approved.jpg" alt="TAPA Partner">
+                <div class="carousel-caption">
+                    <h3>TAPA Partner</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/gtpcarousel/snap-banner.jpg" alt="SNAP Site">
+                <div class="carousel-caption">
+                    <h3>SNAP Site</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#gtpcarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#gtpcarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- About Us -->
+    <div class="container-fluid">
+        <div class="heading-gtpcentre" id="aboutus">
+            <br /><br />
+            <h1 class="display-3"><kbd>About Us</kbd></h1>
+            <br /><br />
+            <div class="row">
+                <div class="col-sm-12">
+                    Opened in 2019 having gained 
+                    <span style="color:#C5B358;font-weight:bold">TAPA Approved Secure Parking Operator</span> status, Grange Truck Park in South Yorkshire offers 
+                    <span style="color:#C5B358;font-weight:bold">high security parking</span> for hauliers carrying 
+                    <span style="color:#C5B358;font-weight:bold">high value</span> cargo.
+                    <br /><br />
+                    The Site has a heavy grade, sliding steel 
+                    <span style="color:#C5B358;font-weight:bold">security gate</span> and full
+                    <span style="color:#C5B358;font-weight:bold">perimeter fencing</span>, all monitoried by a Home Office approved
+                    <br /><br />
+                    <span style="color:#C5B358;font-weight:bold">CCTV</span> system including 
+                    <span style="color:#C5B358;font-weight:bold">motion tracking</span> technology which continuously 
+                    <span style="color:#C5B358;font-weight:bold">detects threats</span> both inside and outside of the facility.
+                    <br /><br />
+                    The whole site is covered by 
+                    <span style="color:#C5B358;font-weight:bold">motion sensors</span> and a professional 
+                    <span style="color:#C5B358;font-weight:bold">monitoring team</span> is on standby
+                    <span style="color:#C5B358;font-weight:bold">24/7</span> to respond to any alarm.
+                    <br /><br />
+                    As well as the high level of security offered at Grange Truck Park, the site also includes
+                    <span style="color:#C5B358;font-weight:bold">toilet and shower</span> facilities for both
+                    <span style="color:#C5B358;font-weight:bold">male and female</span> drivers.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Services -->
+    <div class="container-fluid">
+        <div class="heading-gtpcentre" id="ourservices">
+            <br /><br />
+            <h1 class="display-3"><kbd>Our Services</kbd></h1>
+            <br /><br />
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top" src="img/icon/camera-icon.png" alt="Monitoring">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Monitoring</h4>
+                            <p class="card-text">Home Office Approved CCTV System</p>
+                            <p class="card-text">Motion Tracking Cameras</p>
+                            <p class="card-text">Perimeter Motion Detection Sensors</p>
+                            <p class="card-text">24/7 Monitoring & Response Team</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top" src="img/icon/key-icon.png" alt="Access Control">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Access Control</h4>
+                            <p class="card-text">ANPR Managed Access</p>
+                            <p class="card-text">All Vehicle Access Logged</p>
+                            <p class="card-text"></p>Heavy Grade Steel Security Gate</p>
+                            <p class="card-text"></p>Full Perimeter Fencing</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top" src="img/icon/diary-icon.png" alt="Booking">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Managed Booking</h4>
+                            <p class="card-text">Prebookings Only</p>
+                            <p class="card-text">Prepayment Only</p>
+                            <p class="card-text">Book via SNAP Account</p>
+                            <p class="card-text">TAPA Approved Secure Parking Operator</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img-top" src="img/icon/shower-icon.png" alt="Facilities">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Facilities</h4>
+                            <p class="card-text">Showers</p>
+                            <p class="card-text">WCs</p>
+                            <p class="card-text">Floodlighting</p>
+                            <p class="card-text">Separate facilities for male and female drivers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Find Us -->
+    <div class="container-fluid">
+        <div class="heading-gtpcentre" id="findus">
+            <br /><br />
+            <h1 class="display-3"><kbd>Find Us</kbd></h1>
+            <br /><br />
+            <!--Google map-->
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.046318899497!2d-1.427499684669326!3d53.431880079996944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879777dc6d90101%3A0x678304198962f9a8!2s512+(Sheffield)+Ltd!5e0!3m2!1sen!2suk!4v1554308360366!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>  
+        </div>
+    </div>
+    <!-- Contact Us Modal -->
+    <!-- The Modal -->
+    <div class="modal" id="contactus">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Contact Us</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form method="POST" action="https://formspree.io/jsbarber@gmail.com">
+                    <div class="container">
+                        <input type="email" name="email" placeholder="Your email">
+                    </div>
+                    <p />
+                    <div class="container">
+                        <textarea name="message" placeholder="Enter Your Message..."></textarea>
+                    </div>  
+                    <p />
+                    <div class="container">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <!-- <button type="submit" class="btn btn-success" data-dismiss="modal">Send Message</button> -->
+            </div>
+      
+          </div>
+        </div>
+      </div>
+</body>
+</html>
