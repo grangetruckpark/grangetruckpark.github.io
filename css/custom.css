@@ -100,7 +100,7 @@
   width:100%;
   position:absolute;
   }
-/* Custom navbar CSS using: https://work.smarchal.com/twbscolor/4.0.0/css/800000902216ecf0f1db65671 */
+/* Custom navbar CSS using: https://work.smarchal.com/twbscolor/4.0.0/css/800000902216ecf0f1C5B3581 */
 .navbar {
   /* background-color: #848587; */
   background-color: black;
@@ -141,7 +141,7 @@
 .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
 .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
 .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
-  color: #db6567;
+  color: #C5B358;
   background-color: #902216;
 }
 .navbar .navbar-nav .dropdown-menu .dropdown-divider {
@@ -184,10 +184,10 @@
   }
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #db6567;
+    color: #C5B358;
   }
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #db6567;
+    color: #C5B358;
     background-color: #902216;
   }
 }
@@ -198,10 +198,10 @@
   }
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #db6567;
+    color: #C5B358;
   }
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #db6567;
+    color: #C5B358;
     background-color: #902216;
   }
 }
@@ -212,10 +212,10 @@
   }
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #db6567;
+    color: #C5B358;
   }
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #db6567;
+    color: #C5B358;
     background-color: #902216;
   }
 }
@@ -226,10 +226,10 @@
   }
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #db6567;
+    color: #C5B358;
   }
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #db6567;
+    color: #C5B358;
     background-color: #902216;
   }
 }
@@ -239,10 +239,10 @@
 }
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-  color: #db6567;
+  color: #C5B358;
 }
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
-  color: #db6567;
+  color: #C5B358;
   background-color: #902216;
 }
 
