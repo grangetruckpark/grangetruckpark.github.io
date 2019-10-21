@@ -1,18 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Grange Truck Park</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="scripts/main.js"></script>
-  <script src="scripts/postmail.js"></script>
+    <title>Grange Truck Park</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.amcapi.com/translation/cloudtranslation-1.0.0.min.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script> 
+    <script type="application/json" id="CloudTranslationConfig">
+        {
+            "Settings": {
+                "DefaultLanguage": "en",
+                "LogTranslationsFromProvider": true,
+                "UrlLanguageLocation": "",
+                "TranslatorProvider": "",
+                "TranslatorProviderKey": ""
+            },
+            "Languages": [
+                {
+                "Code": "en",
+                "DisplayName": "English"
+                },
+                {
+                "Code": "pl",
+                "DisplayName": "Polskie"
+                }
+            ],
+            "Translations": [
+                {"en": "Home", "pl": "W: strona główna"},
+                {"en": "About Us", "pl": "O nas"},
+                {"en": "Our Services", "pl": "Nasze usługi"},
+                {"en": "Find Us", "pl": "Znajdź nas"},
+                {"en": "Contact Us", "pl": "Skontaktuj się z nami"},
+                {"en": "M1 Southbound Approach", "pl": "M1 podejście Southbound"},
+                {"en": "M1 Northbound Approach", "pl": "M1 podejście Northbound"},
+                {"en": "Site Entrance", "pl": "Wejście do obiektu"},
+                {"en": "Security Gate", "pl": "Brama bezpieczeństwa"},
+                {"en": "Access Barrier", "pl": "Bariery dostępu"},
+                {"en": "Parking Area", "pl": "Miejsce parkingowe"},
+                {"en": "TAPA Partner", "pl": "Partner TAPA"},
+                {"en": "SNAP Site", "pl": "SNAP Strona"},
+                {"en": "Opened in September 2019 having gained", "pl": "Otwarty we wrześniu 2019 po zdobyciu "},
+                {"en": "TAPA Approved Secure Parking Operator", "pl": "Bezpieczny operator parkowania z atestowanym TAPA"},
+                {"en": " status, Grange Truck Park in South Yorkshire offers ", "pl": " status, Grange Truck Park w South Yorkshire oferuje "},
+                {"en": "high security parking", "pl": "wysoki parking strzeżony"},
+                {"en": " for hauliers carrying ", "pl": " dla przewoźników przewożących "},
+                {"en": "high value", "pl": "Wysoka wartość"},
+                {"en": " cargo.", "pl": " Ładunku."},
+                {"en": "The Site has a heavy grade, sliding steel ", "pl": "Strona ma ciężki gatunek, stal przesuwna "},
+                {"en": "security gate", "pl": "Brama bezpieczeństwa"},
+                {"en": " and full ", "pl": " i pełne "},
+                {"en": "perimeter fencing", "pl": "ogrodzenia ogrodzeniowe"},
+                {"en": ", all monitoried by a Home Office approved", "pl": ", wszystkie monitorowane przez Home Office zatwierdzone"},
+                {"en": "CCTV", "pl": "Cctv"},
+                {"en": " system including ", "pl": " systemu, w tym "},
+                {"en": "motion tracking", "pl": "śledzenie ruchu"},
+                {"en": " technology which continuously ", "pl": " technologię, która nieustannie "},
+                {"en": "detects threats", "pl": "wykrywa zagrożenia"},
+                {"en": " both inside and outside of the facility.", "pl": " zarówno wewnątrz, jak i na zewnątrz obiektu."},
+                {"en": "The whole site is covered by ", "pl": "Cała strona objęta jest "},
+                {"en": "motion sensors", "pl": "Czujniki ruchu"},
+                {"en": " and a professional ", "pl": " i profesjonalny "},
+                {"en": "monitoring team", "pl": "Zespół monitorujący"},
+                {"en": " is on standby", "pl": " jest w trybie gotowości"},
+                {"en": "24/7", "pl": "24/7"},
+                {"en": " to respond to any alarm.", "pl": " reagować na alarm."},
+                {"en": "As well as the high level of security offered at Grange Truck Park, the site also includes", "pl": "Oprócz wysokiego poziomu bezpieczeństwa oferowanych w Grange Truck Park, Strona zawiera również"},
+                {"en": "toilet and shower", "pl": "toaleta i prysznic"},
+                {"en": " facilities for both", "pl": " urządzeń dla obu"},
+                {"en": "male and female", "pl": "Mężczyźni i kobiety"},
+                {"en": " drivers.", "pl": " Sterowniki."},
+                {"en": "Monitoring", "pl": "Monitorowania"},
+                {"en": "Home Office Approved CCTV System", "pl": "Home Office zatwierdzony system CCTV"},
+                {"en": "Motion Tracking Cameras", "pl": "Kamery do śledzenia ruchu"},
+                {"en": "Perimeter Motion Detection Sensors", "pl": "Czujniki obwodu detekcji ruchu"},
+                {"en": "24/7 Monitoring & Response Team", "pl": "24/7 monitorowanie zespołu odpowiedzi &"},
+                {"en": "Access Control", "pl": "Kontrola dostępu"},
+                {"en": "Managed Access", "pl": "Zarządzany dostęp"},
+                {"en": "All Vehicle Access Logged", "pl": "Dostęp do wszystkich zarejestrowanych pojazdów"},
+                {"en": "Managed Booking", "pl": "Zarządzana rezerwacja"},
+                {"en": "Prebookings Only", "pl": "Tylko rezerwacje wstępne"},
+                {"en": "Prepayment Only", "pl": "Tylko przedpłata"},
+                {"en": "Book via SNAP Account", "pl": "Zarezerwuj za pomocą konta SNAP"},
+                {"en": "Facilities", "pl": "Udogodnienia"},
+                {"en": "Showers", "pl": "Prysznice"},
+                {"en": "WCs", "pl": "Wcs"},
+                {"en": "Floodlighting", "pl": "Iluminacja"},
+                {"en": "Separate facilities for male and female drivers", "pl": "Oddzielne urządzenia dla kierowców płci męskiej i żeńskiej"},
+                {"en": "×", "pl": "×"},
+                {"en": "Send Message", "pl": "Wyślij wiadomość"},
+                {"en": "Your email", "pl": "Twój email"},
+                {"en": "Enter Your Message", "pl": "Wpisz swoją wiadomość"}
+            ]
+        }
+    </script>
 </head>
 <body>
+
     <!-- Scroll to top button -->
     <a href="#" id="scroll" style="display: none;"><span></span></a>
     <!-- Heading -->
@@ -66,6 +154,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle = "modal" data-target= "#contactus">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <img src="img/icon/gb-flag.png" />|<img src="img/icon/pl-flag.png" />
+                    <select class="CloudTranslationSelection"></select>
                 </li>
             </ul>
             </div>
@@ -148,28 +240,41 @@
             <h1 class="display-3"><kbd>About Us</kbd></h1>
             <br /><br />
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12" translate=yes>
                     Opened in September 2019 having gained 
-                    <span style="color:#C5B358;font-weight:bold">TAPA Approved Secure Parking Operator</span> status, Grange Truck Park in South Yorkshire offers 
-                    <span style="color:#C5B358;font-weight:bold">high security parking</span> for hauliers carrying 
-                    <span style="color:#C5B358;font-weight:bold">high value</span> cargo.
+                    <span style="color:#C5B358;font-weight:bold">TAPA Approved Secure Parking Operator</span>
+                    <span> status, Grange Truck Park in South Yorkshire offers </span>
+                    <span style="color:#C5B358;font-weight:bold">high security parking</span>
+                    <span> for hauliers carrying </span>
+                    <span style="color:#C5B358;font-weight:bold">high value</span>
+                    <span> cargo.</span>
                     <br /><br />
-                    The Site has a heavy grade, sliding steel 
-                    <span style="color:#C5B358;font-weight:bold">security gate</span> and full
-                    <span style="color:#C5B358;font-weight:bold">perimeter fencing</span>, all monitoried by a Home Office approved
+                    <span>The Site has a heavy grade, sliding steel </span>
+                    <span style="color:#C5B358;font-weight:bold">security gate</span>
+                    <span> and full </span>
+                    <span style="color:#C5B358;font-weight:bold">perimeter fencing</span>
+                    <span>, all monitoried by a Home Office approved</span>
                     <br /><br />
-                    <span style="color:#C5B358;font-weight:bold">CCTV</span> system including 
-                    <span style="color:#C5B358;font-weight:bold">motion tracking</span> technology which continuously 
-                    <span style="color:#C5B358;font-weight:bold">detects threats</span> both inside and outside of the facility.
+                    <span style="color:#C5B358;font-weight:bold">CCTV</span>
+                    <span> system including </span>
+                    <span style="color:#C5B358;font-weight:bold">motion tracking</span>
+                    <span> technology which continuously </span>
+                    <span style="color:#C5B358;font-weight:bold">detects threats</span>
+                    <span> both inside and outside of the facility.</span>
                     <br /><br />
-                    The whole site is covered by 
-                    <span style="color:#C5B358;font-weight:bold">motion sensors</span> and a professional 
-                    <span style="color:#C5B358;font-weight:bold">monitoring team</span> is on standby
-                    <span style="color:#C5B358;font-weight:bold">24/7</span> to respond to any alarm.
+                    <span>The whole site is covered by </span>
+                    <span style="color:#C5B358;font-weight:bold">motion sensors</span>
+                    <span> and a professional </span>
+                    <span style="color:#C5B358;font-weight:bold">monitoring team</span>
+                    <span> is on standby</span>
+                    <span style="color:#C5B358;font-weight:bold">24/7</span>
+                    <span> to respond to any alarm.</span>
                     <br /><br />
-                    As well as the high level of security offered at Grange Truck Park, the site also includes
-                    <span style="color:#C5B358;font-weight:bold">toilet and shower</span> facilities for both
-                    <span style="color:#C5B358;font-weight:bold">male and female</span> drivers.
+                    <span>As well as the high level of security offered at Grange Truck Park, the site also includes</span>
+                    <span style="color:#C5B358;font-weight:bold">toilet and shower</span>
+                    <span> facilities for both</span>
+                    <span style="color:#C5B358;font-weight:bold">male and female</span>
+                    <span> drivers.</span>
                 </div>
             </div>
         </div>
