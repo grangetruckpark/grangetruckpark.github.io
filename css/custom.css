@@ -104,6 +104,7 @@
 .navbar {
   /* background-color: #848587; */
   background-color: black;
+
 }
 .navbar .navbar-brand {
   color: #ecf0f1;
@@ -246,6 +247,15 @@
   background-color: #902216;
 }
 
+.navbar-nav li select {
+  vertical-align: bottom;
+}
+
 .card-header {
   background-color: #C5B358;
+}
+
+.vertical-div {
+  display: flex;
+  align-items: center;
 }
